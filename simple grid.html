@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Grid example</title>
+    <style>
+        .container {
+            display: grid;
+           grid-template-columns:repeat(2 ,1fr);
+            border:5px ;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 10px;
+
+
+        }
+        .box {
+        
+            background-color: white ;
+            padding:20px ;
+            text-align: center;
+            border:1px  solid black;
+            justify-content: center;
+            cursor:pointer;
+
+        }
+        .box h2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .caption {
+            font-size: 30px;
+            font-weight:bold;
+            text-align: center;
+            color:rgb(255, 0, 221);
+        }
+    </style>
+    </head>
+    <body>
+        
+        <h1 class="caption"> Elegant Jewellery Collection</h1>
+        <div class="container">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1MNPdQ1qQNjAuYAH3biA4z-9v4LG12Vyyu0xxLwr8A&s=10" width="200px" alt="necklace">
+                <h2>Necklace</h2>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO3YMedA_ACgI7Igbl4J6AgpwmMfVMCqZsJk3lAmoJCak-rjIOh-SAX7A&s=10"  width="200px" height="200" alt="earrings">
+                <h2> Earrings </h2>
+             </div>
+            <div class="box">
+                <img src="https://freemen.in/cdn/shop/files/designer-dot-with-mini-box-ad-bangles-for-women_1.jpg?v=1775720614&width=600" width="200px" alt="bangles">
+                <h2> Bangles</h2>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxAVJrx37Q5Vx2zSgGQv_uSfCInrNsDiVBTbNyn4wGZaqm7-3VnGfgprvR&s=10" width="200px" alt="ring">
+                <h2> Ring </h2>
+            </div>
+       </div>
+</body>
+</html>       

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Signal Example</title>
+    <style>
+        h1{
+            color:red;
+            font-size:30px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME HIGHWAY</h1>
+
+    <script>
+        let signal = prompt("Enter signal color: red, yellow, or green");
+
+        switch(signal) {
+            case "red":
+                document.write("Stop");
+                break;
+
+            case "yellow":
+                document.write("Wait");
+                break;
+
+            case "green":
+                document.write("Go");
+                break;
+
+            default:
+                document.write("Invalid signal");
+        }
+    </script>
+</body>
+</html>

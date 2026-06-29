@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript Example</title>
+</head>
+<body>
+
+    <h1 id="name">Sakshi Lohakare</h1>
+
+    <p class="info">BCA Student</p>
+    <p class="info">Learning Web Development</p>
+
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+
+    <p class="goal">My goal is to become a Web Developer.</p>
+
+    <ul>
+        <li class="project">Student Registration Form</li>
+        <li class="project">School Timetable</li>
+        <li class="project">News Website Layout</li>
+    </ul>
+
+    <button onclick="changePortfolio()">Click Me</button>
+
+    <script>
+        function changePortfolio() {
+
+            
+            document.getElementById("name").innerHTML =
+                "Welcome to Sakshi's Portfolio";
+
+            
+            document.getElementsByClassName("info")[0].innerHTML =
+                "I am a BCA Student";
+
+            document.getElementsByClassName("info")[1].innerHTML =
+                "Currently learning JavaScript and Bootstrap";
+
+            document.getElementsByTagName("h2")[0].innerHTML =
+                "Python - My Skill";
+
+            document.getElementsByTagName("h2")[1].innerHTML =
+                "Javascript - My Skill";
+
+            document.querySelector(".goal").innerHTML =
+                "Future Goal: Become a Professional Web Developer";
+
+            let projects = document.querySelectorAll(".project");
+
+            projects[0].innerHTML = "Portfolio Website";
+            projects[1].innerHTML = "Restaurant Landing Page";
+            projects[2].innerHTML = "E-Commerce Front Page";
+        }
+    </script>
+
+</body>
+</html>

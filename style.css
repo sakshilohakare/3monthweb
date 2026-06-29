@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+
+    background-image:url("sakshi.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:350px;
+    background-color:rgba(255,255,255,0.9);
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0px 0px 20px black;
+}
+
+.login-box h1{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background-color:#1877f2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#0d5fd3;
+}
+
+a{
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    color:blue;
+}

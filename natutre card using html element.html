@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Change Example</title>
+    <style>
+        .card{
+            width: 250px;
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            margin: 50px auto;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .card img{
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        h1{
+            color: darkblue;
+            text-align: center;
+        }
+
+        button{
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Card Example</h1>
+
+    <div class="card">
+        <img id="cardImg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=200">
+        <h2 id="title">Nature</h2>
+        <p id="text">This is a beautiful nature image.</p>
+        <button onclick="changeCard()">Change Card</button>
+    </div>
+
+    <script>
+        function changeCard(){
+            document.getElementById("cardImg").src = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=200";
+            document.getElementById("title").innerHTML = "Mountain";
+            document.getElementById("text").innerHTML = "This is a beautiful mountain image.";
+        }
+    </script>
+
+</body>
+</html>
