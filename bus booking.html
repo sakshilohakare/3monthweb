@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bus Booking</title>
 
 <style>
@@ -135,13 +137,17 @@ border-radius:5px;
 
 <div class="search">
 
+<label for="from">From</label>
 <input type="text" id="from" placeholder="From">
 
+<label for="to">To</label>
 <input type="text" id="to" placeholder="To">
 
+<label for="date">Journey Date</label>
 <input type="date" id="date">
 
 <button onclick="showBus()">
+
 Search Bus
 </button>
 
@@ -175,9 +181,11 @@ Search Bus
 
 <div class="info">
 
-<input type="text" placeholder="Passenger Name">
+<label for="name">Passenger Name</label>
+<input type="text" id="name" placeholder="Passenger Name">
 
-<input type="text" placeholder="Mobile Number">
+<label for="mobile">Mobile Number</label>
+<input type="text" id="mobile" placeholder="Mobile Number">
 
 <button class="bookBtn" onclick="bookSeat()">
 Book Now
